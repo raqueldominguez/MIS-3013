@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Xml;
 
 namespace Participation_SumOf3
@@ -7,8 +8,9 @@ namespace Participation_SumOf3
     class Program
     {
         const double LUCKY_NUMBER = 7.777;
-            
+           
         static void Main(string[] args)
+
         {
             Console.WriteLine("Enter a first number.");
             int first = (int)Convert.ToDouble (Console.ReadLine());
@@ -19,6 +21,7 @@ namespace Participation_SumOf3
 
             int sum = (first + second + third);
             Console.WriteLine("The sum of the three numbers is: " + sum);
+            string output = Convert.ToString("sum");
 
             Console.WriteLine("The sum multiplied by 7.777 is: " + (sum * LUCKY_NUMBER));
         }
