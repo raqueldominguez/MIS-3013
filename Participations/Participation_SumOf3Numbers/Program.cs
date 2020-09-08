@@ -13,17 +13,24 @@ namespace Participation_SumOf3
         static void Main(string[] args)
 
         {
-            Console.WriteLine("Enter a first number.");
-            int first = (int)Convert.ToDouble (Console.ReadLine());
-            Console.WriteLine("Enter a second number.");
-            int second = (int)Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter a third number.");
-            int third = (int)Convert.ToDouble(Console.ReadLine());
+            double first, second, third, sum;
 
-            int sum = (first + second + third);
-            Console.WriteLine("The sum of the three numbers is: " + sum.ToString("F3"));
+            Console.WriteLine("Enter a first number. >>");
+            string input = (Console.ReadLine());
+            first = Convert.ToDouble(input);
 
-            Console.WriteLine("The sum multiplied by 7.777 is: " + (sum * LUCKY_NUMBER));
+            Console.WriteLine("Enter a second number. >>");
+            second = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter a third number. >>");
+            third = Convert.ToDouble(Console.ReadLine());
+
+            sum = first + second + third;
+            Console.WriteLine($"The sum of the three numbers is: " + sum.ToString("N3"));
+
+            double luckyNum = sum * LUCKY_NUMBER;
+
+            Console.WriteLine($"The sum multiplied by 7.777 is: {luckyNum.ToString ("N3")}.");
         }
     }
 }
