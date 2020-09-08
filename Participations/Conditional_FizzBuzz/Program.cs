@@ -32,7 +32,7 @@ namespace Conditional_FizzBuzz
                 Console.WriteLine(number);
             }
 
-            Console.WriteLine(number);
+          
         }
     }
 }
