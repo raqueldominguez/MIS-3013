@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOf3", "Participation_SumOf3Numbers\SumOf3.csproj", "{0F25CF01-8EDE-4D41-9BBE-56F15BB09D3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Participations", "Participations\Participations.csproj", "{3D063411-EBB2-4371-8C9B-73B959FAFE63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditional_FizzBuzz", "Conditional_FizzBuzz\Conditional_FizzBuzz.csproj", "{EB9E8823-E5DC-46F9-B53C-9290DAA61036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOf3_Participation", "SumOf3_Participation\SumOf3_Participation.csproj", "{9AB7B1E5-E31B-49AF-8E36-BB59E81EF361}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conditional_FizzBuzz", "Conditional_FizzBuzz\Conditional_FizzBuzz.csproj", "{BE7F5E0A-51CF-44F2-B777-29898A26386D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditional_CoinToss", "Conditional_CoinToss\Conditional_CoinToss.csproj", "{89B64BF2-B98D-4B64-BE20-A1189701F446}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +17,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0F25CF01-8EDE-4D41-9BBE-56F15BB09D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F25CF01-8EDE-4D41-9BBE-56F15BB09D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F25CF01-8EDE-4D41-9BBE-56F15BB09D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F25CF01-8EDE-4D41-9BBE-56F15BB09D3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB9E8823-E5DC-46F9-B53C-9290DAA61036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB9E8823-E5DC-46F9-B53C-9290DAA61036}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB9E8823-E5DC-46F9-B53C-9290DAA61036}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB9E8823-E5DC-46F9-B53C-9290DAA61036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D063411-EBB2-4371-8C9B-73B959FAFE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D063411-EBB2-4371-8C9B-73B959FAFE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D063411-EBB2-4371-8C9B-73B959FAFE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D063411-EBB2-4371-8C9B-73B959FAFE63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB7B1E5-E31B-49AF-8E36-BB59E81EF361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB7B1E5-E31B-49AF-8E36-BB59E81EF361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB7B1E5-E31B-49AF-8E36-BB59E81EF361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB7B1E5-E31B-49AF-8E36-BB59E81EF361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7F5E0A-51CF-44F2-B777-29898A26386D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7F5E0A-51CF-44F2-B777-29898A26386D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7F5E0A-51CF-44F2-B777-29898A26386D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7F5E0A-51CF-44F2-B777-29898A26386D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B64BF2-B98D-4B64-BE20-A1189701F446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B64BF2-B98D-4B64-BE20-A1189701F446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B64BF2-B98D-4B64-BE20-A1189701F446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B64BF2-B98D-4B64-BE20-A1189701F446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {36D61663-4052-48D7-9A70-118756EFE880}
+		SolutionGuid = {2399654B-4867-47B9-9B4A-A41F75079A78}
 	EndGlobalSection
 EndGlobal

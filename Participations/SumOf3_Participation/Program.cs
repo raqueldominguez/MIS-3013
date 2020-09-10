@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Net;
-using System.Text;
-using System.Xml;
 
-namespace Participation_SumOf3
-
+namespace SumOf3_Participation
 {
     class Program
     {
         const double LUCKY_NUMBER = 7.777;
-           
         static void Main(string[] args)
-
         {
             double first, second, third, sum;
 
@@ -30,7 +24,7 @@ namespace Participation_SumOf3
 
             double luckyNum = sum * LUCKY_NUMBER;
 
-            Console.WriteLine($"The sum multiplied by 7.777 is: {luckyNum.ToString ("N3")}.");
+            Console.WriteLine($"The sum multiplied by 7.777 is: {luckyNum.ToString("N3")}.");
         }
     }
 }

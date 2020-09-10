@@ -8,22 +8,17 @@ namespace Conditional_FizzBuzz
         {
             Random rnd = new Random();
             int number = rnd.Next(1, 101);
+            number = 11;
 
-            //BOOLEAN OPERATORS:
-            //      OR = ||
-            //      AND = &&
-            
             if (number % 3 == 0 && number % 5 == 0)
             {
-                Console.WriteLine("Fizz Buzz");
+                Console.WriteLine("FizzBuzz");
             }
-
             else if (number % 3 == 0)
             {
                 Console.WriteLine("Fizz");
             }
-
-            else if (number % 5 == 0)
+            else if (number % 5 ==0)
             {
                 Console.WriteLine("Buzz");
             }
@@ -31,8 +26,6 @@ namespace Conditional_FizzBuzz
             {
                 Console.WriteLine(number);
             }
-
-          
         }
     }
 }
