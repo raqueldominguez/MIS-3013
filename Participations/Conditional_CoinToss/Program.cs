@@ -8,25 +8,26 @@ namespace Conditional_CoinToss
         {
             
             Console.WriteLine("Pick heads or tails");
-            Random rdn = new Random();
-            int randomNumber = rdn.Next(0, 2);
-            Console.WriteLine(randomNumber);
-            int answer;
             string answer = Console.ReadLine();
             const int HEADS = 0;
-            const int TAILS =1; 
+            const int TAILS = 1;
 
-            if (rdn.Next == 0)
-                Console.WriteLine("Heads");
-            else if (rdn.Next == 1)
+            Random rnd = new Random();
+            int result = rnd.Next(0, 2);
+
+            if (answer == "Heads")
+            {
+                answer = HEADS;
+            }
+            else if (answer == "Tails")
+            {
                 Console.WriteLine("Tails");
-	{
+            }
+            else 
+            
 
-	}
-	{
-
-	}
-	{
+            
+	
 
 	}
 
