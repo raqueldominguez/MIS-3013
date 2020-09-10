@@ -9,28 +9,29 @@ namespace Conditional_CoinToss
             
             Console.WriteLine("Pick heads or tails");
             string answer = Console.ReadLine();
-            const int HEADS = 0;
-            const int TAILS = 1;
-
             Random rnd = new Random();
             int result = rnd.Next(0, 2);
+            const int HEADS_VALUE = 0;
+            const int TAILS_VALUE = 1;
 
-            if (answer == "Heads")
+            if (result == 0)
             {
-                answer = HEADS;
+                Console.WriteLine("Heads");
             }
-            else if (answer == "Tails")
+            else if (result == 1)
             {
                 Console.WriteLine("Tails");
             }
-            else 
-            
 
-            
-	
+           
+
+
+
+
+            Console.ReadKey();
 
 	}
 
         }
     }
-}
+}   
