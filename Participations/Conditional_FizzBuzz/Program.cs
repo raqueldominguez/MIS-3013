@@ -8,7 +8,6 @@ namespace Conditional_FizzBuzz
         {
             Random rnd = new Random();
             int number = rnd.Next(1, 101);
-            number = 11;
 
             if (number % 3 == 0 && number % 5 == 0)
             {
