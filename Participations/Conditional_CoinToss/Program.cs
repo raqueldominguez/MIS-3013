@@ -13,7 +13,7 @@ namespace Conditional_CoinToss
             string usersGuessAsString = Console.ReadLine();
             int usersGuess;
             const int HEADS = 0;
-            const int TAILS =1;
+            const int TAILS =1; 
 
         }
     }
