@@ -10,17 +10,17 @@ namespace Conditional_CoinToss
             Random rand = new Random();
             int randomNumber = rand.Next(0, 2);
             Console.WriteLine(randomNumber);
-            Console.WriteLine("Enter Heads or Tails >>");
-            string usersGuessAsString = Console.ReadLine();
+            Console.WriteLine("Pick Heads or Tails");
+            string answer = Console.ReadLine();
             int usersGuess;
             const int HEADS = 0;
             const int TAILS = 1;
 
-            if (usersGuessAsString == "Heads")
+            if (answer == "Heads")
             {
                 usersGuess = HEADS;
             }
-            else if (usersGuessAsString == "Tails")
+            else if (answer == "Tails")
             {
                 usersGuess = TAILS;
             }
@@ -35,22 +35,21 @@ namespace Conditional_CoinToss
 
             if (usersGuess == randomNumber)
             {
-                Console.WriteLine($"Congrats, {usersGuessAsString} was right!");
+                Console.WriteLine($"Congrats, {answer} was right!");
             }
             else
             {
                 if (usersGuess == 0)
                 {
-                    Console.WriteLine($"Sorry, Tails was the correct answer and you guessed {usersGuessAsString}  =(");
-                    //"Sorry, Tails was the correct answer and you guessed " + usersGuessAsString + "  =(");
+                    Console.WriteLine($"Sorry, Tails was the correct answer and you guessed {answer}");
                 }
                 else
                 {
-                    Console.WriteLine($"Sorry, Heads was the correct answer and you guessed {usersGuessAsString}  =(");
+                    Console.WriteLine($"Sorry, Heads was the correct answer and you guessed {answer}");
                 }
             }
 
-            Console.ReadKey(); //Prevent the application from closing until we press a key
+            Console.ReadKey(); 
 
 
 	
