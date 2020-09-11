@@ -4,42 +4,41 @@ namespace Conditional_CoinToss
 {
     class Program
     {
+        const string DEVELOPER = "Raquel Dominguez";
         static void Main(string[] args)
-        {
-
-            Random rand = new Random();
-            int randomNumber = rand.Next(0, 2);
-            Console.WriteLine(randomNumber);
-            Console.WriteLine("Pick Heads or Tails");
+        {          
+            Console.WriteLine("Pick heads or tails >>");
             string answer = Console.ReadLine();
-            int usersGuess;
+            int guess;
+            Random rnd = new Random();
+            int randomNumber = rnd.Next(0, 2);
+            Console.WriteLine(randomNumber);
             const int HEADS = 0;
             const int TAILS = 1;
 
-            if (answer == "Heads")
+            if (answer == "heads")
             {
-                usersGuess = HEADS;
+                guess = HEADS;
             }
-            else if (answer == "Tails")
+            else if (answer == "tails")
             {
-                usersGuess = TAILS;
+                guess = TAILS;
             }
             else
             {
-                Console.WriteLine("Invalid entry: Please try again later");
-                Console.ReadKey();
+                Console.WriteLine("Invalid entry: Try again");
                 return;
             }
 
 
 
-            if (usersGuess == randomNumber)
+            if (guess == randomNumber)
             {
                 Console.WriteLine($"Congrats, {answer} was right!");
             }
             else
             {
-                if (usersGuess == 0)
+                if (guess == 0)
                 {
                     Console.WriteLine($"Sorry, Tails was the correct answer and you guessed {answer}");
                 }
@@ -49,6 +48,7 @@ namespace Conditional_CoinToss
                 }
             }
 
+            Console.WriteLine(DEVELOPER);
             Console.ReadKey(); 
 
 
