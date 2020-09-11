@@ -6,31 +6,54 @@ namespace Conditional_CoinToss
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Pick heads or tails");
-            string answer = Console.ReadLine();
-            Random rnd = new Random();
-            int result = rnd.Next(0, 2);
-            const int HEADS_VALUE = 0;
-            const int TAILS_VALUE = 1;
 
-            if (result == 0)
+            Random rand = new Random();
+            int randomNumber = rand.Next(0, 2);
+            Console.WriteLine(randomNumber);
+            Console.WriteLine("Enter Heads or Tails >>");
+            string usersGuessAsString = Console.ReadLine();
+            int usersGuess;
+            const int HEADS = 0;
+            const int TAILS = 1;
+
+            if (usersGuessAsString == "Heads")
             {
-                Console.WriteLine("Heads");
+                usersGuess = HEADS;
             }
-            else if (result == 1)
+            else if (usersGuessAsString == "Tails")
             {
-                Console.WriteLine("Tails");
+                usersGuess = TAILS;
+            }
+            else
+            {
+                Console.WriteLine("Invalid entry: Please try again later");
+                Console.ReadKey();
+                return;
             }
 
-           
 
 
+            if (usersGuess == randomNumber)
+            {
+                Console.WriteLine($"Congrats, {usersGuessAsString} was right!");
+            }
+            else
+            {
+                if (usersGuess == 0)
+                {
+                    Console.WriteLine($"Sorry, Tails was the correct answer and you guessed {usersGuessAsString}  =(");
+                    //"Sorry, Tails was the correct answer and you guessed " + usersGuessAsString + "  =(");
+                }
+                else
+                {
+                    Console.WriteLine($"Sorry, Heads was the correct answer and you guessed {usersGuessAsString}  =(");
+                }
+            }
+
+            Console.ReadKey(); //Prevent the application from closing until we press a key
 
 
-            Console.ReadKey();
-
-	}
+	
 
         }
     }
