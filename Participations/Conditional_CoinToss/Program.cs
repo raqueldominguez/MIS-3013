@@ -16,6 +16,7 @@ namespace Conditional_CoinToss
             const int HEADS = 0;
             const int TAILS = 1;
 
+
             if (answer == "heads")
             {
                 guess = HEADS;
