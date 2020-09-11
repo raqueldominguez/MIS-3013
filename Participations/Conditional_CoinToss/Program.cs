@@ -15,13 +15,12 @@ namespace Conditional_CoinToss
             Console.WriteLine(randomNumber);
             const int HEADS = 0;
             const int TAILS = 1;
-
-
-            if (answer == "heads")
+          
+            if (String.Compare(answer, "heads", true) == 0)
             {
                 guess = HEADS;
             }
-            else if (answer == "tails")
+            else if (String.Compare(answer, "tails", true) == 0)
             {
                 guess = TAILS;
             }
