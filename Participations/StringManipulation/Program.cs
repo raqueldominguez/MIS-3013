@@ -10,12 +10,16 @@ namespace StringManipulation
     {
         static void Main(string[] args)
         {
-            string s1 = Console.WriteLine("Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning."); 
+            string s1 = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning.";
+            Console.WriteLine(s1);
+            
             Console.WriteLine("What word do you want to look for in the above sentence?");
-            int word = Convert.ToInt32(Console.ReadKey());
+            char word = Console.ReadKey();
 
             Console.WriteLine("What word do you want to it to?");
-            int word2 = Convert.ToInt32(Console.ReadKey());
+            char word2 = Console.ReadKey();
+
+            Console.ReadKey();
         }
     }
 }
