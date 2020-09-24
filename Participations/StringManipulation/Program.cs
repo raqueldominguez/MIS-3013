@@ -14,10 +14,28 @@ namespace StringManipulation
             Console.WriteLine(s1);
             
             Console.WriteLine("What word do you want to look for in the above sentence?");
-            char word = Console.ReadKey();
+            string word = Console.ReadLine();
 
-            Console.WriteLine("What word do you want to it to?");
-            char word2 = Console.ReadKey();
+            Console.WriteLine($"What word do you want to change {word} to?");
+            string word2 = Console.ReadLine();
+
+            bool containWord = s1.Contains(word);
+
+            if (containWord == true)
+            {
+                string s2 = s1.Replace(word, word2);
+                Console.WriteLine(s2);
+            }
+            else
+            {
+                Console.WriteLine($"Sorry, I could not find your word {word2}");
+
+                for (int i = word.Length -1; i >= 0; i--)
+                {
+                    Console.WriteLine(word[i]);
+                }
+                Console.WriteLine();
+            }
 
             Console.ReadKey();
         }
