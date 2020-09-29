@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGuess", "Loops-Random
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringManipulation", "StringManipulation\StringManipulation.csproj", "{1C96829D-C256-455E-A28D-DEF4A39EB36A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quiz", "quiz\quiz.csproj", "{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1C96829D-C256-455E-A28D-DEF4A39EB36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C96829D-C256-455E-A28D-DEF4A39EB36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C96829D-C256-455E-A28D-DEF4A39EB36A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

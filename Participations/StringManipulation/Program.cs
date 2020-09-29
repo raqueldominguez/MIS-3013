@@ -32,7 +32,9 @@ namespace StringManipulation
 
                 for (int i = word.Length -1; i >= 0; i--)
                 {
-                    Console.WriteLine(word[i]);
+                    //write outputs on one line
+                    //writeLine outputs on different lines
+                    Console.Write(word[i]);
                 }
                 Console.WriteLine();
             }
