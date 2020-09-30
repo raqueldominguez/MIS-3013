@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGuess", "Loops-Random
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringManipulation", "StringManipulation\StringManipulation.csproj", "{1C96829D-C256-455E-A28D-DEF4A39EB36A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quiz", "quiz\quiz.csproj", "{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quiz", "quiz\quiz.csproj", "{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections_Min_Max_Avg", "Collections_Min_Max_Avg\Collections_Min_Max_Avg.csproj", "{72B76E1D-A5A0-47F4-986D-824531E88F8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A4327D3-9DFE-4681-AF2D-DF28912D8CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B76E1D-A5A0-47F4-986D-824531E88F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B76E1D-A5A0-47F4-986D-824531E88F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B76E1D-A5A0-47F4-986D-824531E88F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B76E1D-A5A0-47F4-986D-824531E88F8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
