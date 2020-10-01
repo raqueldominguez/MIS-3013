@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Collections
 {
     class Program
     {
-        static void List(string[] args)
+        static void Franky(string[] args)
         {
             string filePath = @"‪C:\Users\raxdo\OneDrive\Documents";
         
@@ -21,7 +22,7 @@ namespace Collections
 	            }
                 Console.WriteLine(line);
                 i++;
-	        }
+            }
 
             Console.ReadKey();
         }
@@ -63,7 +64,7 @@ namespace Collections
         }
         static void Dictionary(string[] args)
         {
-            Dictionary<int, double> studentGpas = new Dictionary<int, Double>;
+            Dictionary<int, double> studentGpas = new Dictionary<int, Double>();
 
             if (studentGpas.ContainsKey(1) == true)
             {
