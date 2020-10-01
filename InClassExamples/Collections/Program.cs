@@ -5,6 +5,62 @@ namespace Collections
 {
     class Program
     {
+        static void List(string[] args)
+        {
+            string filePath = @"‪C:\Users\raxdo\OneDrive\Documents";
+        
+            string[] linesOfFile = File.ReadAllLines(filePath);
+            int i = 0;
+
+            foreach (var line in linesOfFile)
+	        {
+                string[] pieces = line.Split(' ');
+                if (i % 15 == 0 && i != 0)
+	            {
+                    Console.ReadKey();
+	            }
+                Console.WriteLine(line);
+                i++;
+	        }
+
+            Console.ReadKey();
+        }
+        
+        static void List(string[] args)
+        {
+        
+            List<string> favoriteThings = new List<string> ();
+            string answer;
+
+            do
+	        {
+                Console.WriteLine("Please enter one of your favorite things.");
+                string favortieThing = Console.ReadLine();
+
+                favoriteThings.Add(favortieThing);
+
+                Console.WriteLine("Do you have another favorite thing to tell me?");
+                answer = Console.ReadLine();
+
+	        } while (answer.ToLower() == "yes");
+
+            Random rand = new Random();
+            int index = rand.Next(0, favoriteThings.Count);
+
+            Console.WriteLine(favoriteThings[index]);
+
+            //Output all of the strings
+            foreach (var ft in favoriteThings)
+	        {
+                if(ft == "sheepadoodle")
+                {
+                    Console.WriteLine("Your the coolest!");
+                }
+
+	        }
+
+            Console.ReadKey();
+        }
         static void Dictionary(string[] args)
         {
             Dictionary<int, double> studentGpas = new Dictionary<int, Double>;
