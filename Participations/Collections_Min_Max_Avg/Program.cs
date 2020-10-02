@@ -12,8 +12,8 @@ namespace Collections_Min_Max_Avg
 
             do
             {
-                Console.WriteLine("Please enter one of your exam grades.");
-                string grade = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please enter your exam grades.");
+                double grade = Convert.ToDouble(Console.ReadLine());
 
                 grades.Add(grade);
 
@@ -22,26 +22,26 @@ namespace Collections_Min_Max_Avg
 
             } while (answer.ToLower() == "yes");
 
-            int min;
+            int min = 0;
             int max;
-            int average;
 
+            //grades[0]
             foreach (var grade in grades)
             {
-                if (min == grades[0])
+                if (grade == grades[0])
                 {
 
                 }
 
-                if (max)
+                if (grade == grades[0])
                 {
 
                 }
             }
-            
 
-            int average =
 
+            double average = List.Average();
+            Console.WriteLine($"The average is {average}.");
 
         }   
     }
