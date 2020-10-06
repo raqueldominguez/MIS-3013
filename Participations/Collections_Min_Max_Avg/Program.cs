@@ -22,27 +22,29 @@ namespace Collections_Min_Max_Avg
 
             } while (answer.ToLower() == "yes");
 
-            int min = 0;
-            int max;
+            double min;
+            double max;
 
             //grades[0]
             foreach (var grade in grades)
             {
-                if (grade == grades[0])
+                if (grade <= grades[0])
                 {
-
+                    min = grade;
+                    Console.WriteLine($"Your minimum grade is {min}.");
                 }
 
-                if (grade == grades[0])
+                if (grade >= grades[0])
                 {
-
+                    max = grade;
+                    Console.WriteLine($"Your maximun grade is {max}.");
                 }
             }
 
+            //double average = List.average();
+            //Console.WriteLine($"The average is {average}.");
 
-            double average = List.Average();
-            Console.WriteLine($"The average is {average}.");
-
+            Console.ReadKey();
         }   
     }
 }
