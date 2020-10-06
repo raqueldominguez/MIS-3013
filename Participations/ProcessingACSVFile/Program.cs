@@ -26,12 +26,31 @@ namespace ProcessingACSVFile
             double sumFor2003 = 0;
             double sumFor2004 = 0;
             double sumFor2005 = 0;
+            
+            double sumForJan = 0;
+            double sumForFeb = 0;
+            double sumForMar = 0;
+            double sumForApr = 0;
+            double sumForMay = 0;
+            double sumForJun = 0;
+            double sumForJul = 0;
+            double sumForAug = 0;
+            double sumForSep = 0;
+            double sumForOct = 0;
+            double sumForNov = 0;
+            double sumForDec = 0;
+
+
             for (int i = 1; i < lines.Length; i++)
             {
                 string line = lines[i];
                 string[] pieces = line.Split(',');
                 double sale = Convert.ToDouble(pieces[4]);
+                double monthSales = Convert.ToDouble(pieces[4]);
+                
                 string year = pieces[9];
+                string month = pieces[8];
+
                 if (pieces[6].Trim().ToLower() == "shipped")
                 {
                     if (year == "2003")
@@ -47,6 +66,16 @@ namespace ProcessingACSVFile
                         sumFor2005 += sale;
                     }
 
+                    if (month == "January")
+                    {
+                        sumForJan += monthSales;
+                    }
+                    else if (month == "February")
+                    {
+                        sumForFeb += monthSales;
+                    }
+
+
                     sum += sale;
                 }
                 
@@ -55,6 +84,8 @@ namespace ProcessingACSVFile
             Console.WriteLine($"The total sales for shipped items in 2003 is {sumFor2003.ToString("C2")}.");
             Console.WriteLine($"The total sales for shipped items in 2004 is {sumFor2004.ToString("C2")}.");
             Console.WriteLine($"The total sales for shipped items in 2005 is {sumFor2005.ToString("C2")}.");
+
+            Console.WriteLine($"The total sales for shipped items in January is {sumForJan.ToString("C2").");
 
             Console.WriteLine($"Total sales of shipped items is {sum.ToString("C2")}.");
 
