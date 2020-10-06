@@ -5,6 +5,8 @@ namespace Collections_Min_Max_Avg
 {
     class Program
     {
+        private static object list;
+
         static void Main(string[] args)
         {
             List<double> grades = new List<double>();
@@ -25,23 +27,22 @@ namespace Collections_Min_Max_Avg
             double min;
             double max;
 
-            //grades[0]
             foreach (var grade in grades)
             {
-                if (grade <= grades[0])
-                {
-                    min = grade;
-                    Console.WriteLine($"Your minimum grade is {min}.");
-                }
-
-                if (grade >= grades[0])
+                if (grade > grades[0])
                 {
                     max = grade;
                     Console.WriteLine($"Your maximun grade is {max}.");
                 }
+
+                if (grade < grades[0])
+                {
+                    min = grade;
+                    Console.WriteLine($"Your minimum grade is {min}.");
+                }
             }
 
-            //double average = List.average();
+            //double average = List.Count();
             //Console.WriteLine($"The average is {average}.");
 
             Console.ReadKey();
