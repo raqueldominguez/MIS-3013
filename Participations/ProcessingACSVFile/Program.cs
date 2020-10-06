@@ -13,8 +13,6 @@ namespace ProcessingACSVFile
 
             string[] lines = File.ReadAllLines(filePath);
 
-
-            //
             /*
              * Sales = 4
              * Status = 6
