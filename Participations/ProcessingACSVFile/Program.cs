@@ -8,7 +8,8 @@ namespace ProcessingACSVFile
     {
         static void Main(string[] args)
         {
-            string filePath = @"C:\Users\raxdo\OneDrive\Documents\sales_data_sample.csv";
+            //string filePath = @"C:\Users\raxdo\OneDrive\Documents\sales_data_sample.csv";
+            string filePath = @"sales_data_sample.csv";
 
             string[] lines = File.ReadAllLines(filePath);
 
@@ -55,7 +56,7 @@ namespace ProcessingACSVFile
             Console.WriteLine($"The total sales for shipped items in 2004 is {sumFor2004.ToString("C2")}.");
             Console.WriteLine($"The total sales for shipped items in 2005 is {sumFor2005.ToString("C2")}.");
 
-            Console.WriteLine($"Total sales if {sum.ToString("C2")}.");
+            Console.WriteLine($"Total sales of shipped items is {sum.ToString("C2")}.");
 
             Console.ReadKey();
         }
