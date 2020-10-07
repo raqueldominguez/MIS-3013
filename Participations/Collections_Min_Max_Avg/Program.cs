@@ -14,7 +14,7 @@ namespace Collections_Min_Max_Avg
 
             do
             {
-                Console.WriteLine("Please enter your exam grades.");
+                Console.WriteLine("Please enter your exam grade.");
                 double grade = Convert.ToDouble(Console.ReadLine());
 
                 grades.Add(grade);
@@ -29,21 +29,36 @@ namespace Collections_Min_Max_Avg
 
             foreach (var grade in grades)
             {
-                if (grade > grades[0])
-                {
-                    max = grade;
-                    Console.WriteLine($"Your maximun grade is {max}.");
-                }
+                    if (grade < grades[0])
+                    {
+                        min = grade;
+                        Console.WriteLine($"Your minimum grade is {min}.");
+                    }
+                    else if (grade == grades[0])
+                    {
+                        min = grade;
+                        Console.WriteLine($"Your minimum grade is {min}.");
+                    }
 
-                if (grade < grades[0])
-                {
-                    min = grade;
-                    Console.WriteLine($"Your minimum grade is {min}.");
-                }
+
+                    if (grade > grades[0])
+                    {
+                        max = grade;
+                        Console.WriteLine($"Your maximum grade is {max}.");
+                    }
+                    else if (grade == grades[0])
+                    {
+                        max = grade;
+                        Console.WriteLine($"Your maximum grade is {max}.");
+                    }
+                
             }
 
             //double average = List.Count();
             //Console.WriteLine($"The average is {average}.");
+
+           // max >= grade);
+
 
             Console.ReadKey();
         }   
