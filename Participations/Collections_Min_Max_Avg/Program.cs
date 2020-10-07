@@ -24,13 +24,11 @@ namespace Collections_Min_Max_Avg
 
             } while (answer.ToLower() == "yes");
 
-            double min = 0;
+            double min;
             double max;
 
             foreach (var grade in grades)
             {
-                do
-                {
                     if (grade < grades[0])
                     {
                         min = grade;
@@ -41,8 +39,6 @@ namespace Collections_Min_Max_Avg
                      //   min = grade;
                       //  Console.WriteLine($"Your minimum grade is {min}.");
                     //}
-
-                } while (grade > min);
 
                 do
                 {
