@@ -29,7 +29,7 @@ namespace Collections_Min_Max_Avg
 
             foreach (var grade in grades)
             {
-                    if (grade < grades[0])
+                    if (grade <= min)
                     {
                         min = grade;
                         Console.WriteLine($"Your minimum grade is {min}.");
