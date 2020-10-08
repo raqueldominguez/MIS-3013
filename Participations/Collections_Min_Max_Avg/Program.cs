@@ -30,26 +30,26 @@ namespace Collections_Min_Max_Avg
 
             foreach (var grade in grades)
             {
-                do
-                {
+                while (grade < min)
+                { 
                     if (grade < min)
                     {
                         min = grade;
                     }
-                } while (grade > min);
-                Console.WriteLine($"Your minimum grade is {min}.");
+                    Console.WriteLine($"Your minimum grade is {min}.");
+                }
             }
 
             foreach (var grade in grades)
             {
-                do
+                while (grade > max)
                 {
                     if (grade > max)
                     {
                         max = grade;
                     }
-                } while (grade < max);
-                Console.WriteLine($"Your maximum grade is {max}.");
+                    Console.WriteLine($"Your maximum grade is {max}.");
+                }
             }
 
             double average = grades.Sum() / grades.Count();
