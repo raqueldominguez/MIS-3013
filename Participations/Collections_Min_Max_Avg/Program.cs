@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Collections_Min_Max_Avg
 {
@@ -38,9 +39,9 @@ namespace Collections_Min_Max_Avg
                 } while (grade > min);
                 Console.WriteLine($"Your minimum grade is {min}.");
             }
-            
+
             foreach (var grade in grades)
-            { 
+            {
                 do
                 {
                     if (grade > max)
@@ -50,22 +51,9 @@ namespace Collections_Min_Max_Avg
                 } while (grade < max);
                 Console.WriteLine($"Your maximum grade is {max}.");
             }
-                    
 
-            //    if (grade > grades[0])
-            //    {
-            //        max = grade;
-            //    }
-            //    else
-            //    {
-            //        max = grade;
-            //    }
-            //Console.WriteLine($"Your maximum grade is {max}.");
-
-            //double average = List.Count();
-            //Console.WriteLine($"The average is {average}.");
-
-            // max >= grade);
+            double average = grades.Sum() / grades.Count();
+            Console.WriteLine($"The average is {average}.");
 
 
             Console.ReadKey();
