@@ -24,22 +24,33 @@ namespace Collections_Min_Max_Avg
 
             } while (answer.ToLower() == "yes");
 
-            double min = 0;
-            double max;
+            double min = grades[0];
+            double max = grades[0];
 
             foreach (var grade in grades)
             {
-                while (grade > min)
+                do
                 {
-                    if (grade < grades[0])
+                    if (grade < min)
                     {
                         min = grade;
                     }
-                }              
+                } while (grade > min);
+                Console.WriteLine($"Your minimum grade is {min}.");
             }
-
-            Console.WriteLine($"Your minimum grade is {min}.");
-
+            
+            foreach (var grade in grades)
+            { 
+                do
+                {
+                    if (grade > max)
+                    {
+                        max = grade;
+                    }
+                } while (grade < max);
+                Console.WriteLine($"Your maximum grade is {max}.");
+            }
+                    
 
             //    if (grade > grades[0])
             //    {
