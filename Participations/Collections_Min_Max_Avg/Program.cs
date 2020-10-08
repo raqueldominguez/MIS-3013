@@ -26,43 +26,38 @@ namespace Collections_Min_Max_Avg
 
             double min;
             double max;
+            int i = 0;
 
             foreach (var grade in grades)
             {
-                    if (grade <= min)
-                    {
-                        min = grade;
-                        Console.WriteLine($"Your minimum grade is {min}.");
-                    }
-                   // else if (grade == grades[0])
-                    //{
-                     //   min = grade;
-                      //  Console.WriteLine($"Your minimum grade is {min}.");
-                    //}
+                if (grade < grades[i])
+                 {
+                     min = grade;
+                 }
+                 else
+                 {
+                     min = grades[0];
+                 }
+                 Console.WriteLine($"Your minimum grade is {min}.");
 
-                do
+                if (grade > grades[i])
                 {
-                    if (grade > grades[0])
-                    {
-                        max = grade;
-                        Console.WriteLine($"Your maximum grade is {max}.");
-                    }
-                    else if (grade == grades[0])
-                    {
-                        max = grade;
-                        Console.WriteLine($"Your maximum grade is {max}.");
-                    }
+                    max = grade;
+                }
+                else
+                {
+                    max = grades[0];
+                }
+                Console.WriteLine($"Your maximum grade is {max}.");
 
-                } while (true);
+                //double average = List.Count();
+                //Console.WriteLine($"The average is {average}.");
+
+                // max >= grade);
+
+
+                Console.ReadKey();
             }
-
-            //double average = List.Count();
-            //Console.WriteLine($"The average is {average}.");
-
-           // max >= grade);
-
-
-            Console.ReadKey();
-        }   
+        }
     }
 }
