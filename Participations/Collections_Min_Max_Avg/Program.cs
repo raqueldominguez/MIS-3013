@@ -31,26 +31,26 @@ namespace Collections_Min_Max_Avg
             {
                 do
                 {
-                    if (grade < grades[0])
+                    if (grade > grades[grades.Count])
                     {
                         min = grade;
                     }
                     else
                     {
-                        min = grades[0];
+                        min = grade;
                     }
-                } while (grade> grades[0]); 
+                } while (grade > grades[0]); 
                  Console.WriteLine($"Your minimum grade is {min}.");
 
                 do
                 {
-                    if (grade > grades[0])
+                    if (grade > grades[grades.Count])
                     {
                         max = grade;
                     }
                     else
                     {
-                        max = grades[0];
+                        max = grade;
                     }
                 } while (grade < grades[0]);
                 Console.WriteLine($"Your maximum grade is {max}.");
