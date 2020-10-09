@@ -36,9 +36,13 @@ namespace Collections_Min_Max_Avg
                     {
                         min = grade;
                     }
-                    Console.WriteLine($"Your minimum grade is {min}.");
-                }
+                    else if (grade > min)
+                    {
+                        min = grades[0];
+                    }                   
+                }               
             }
+            Console.WriteLine($"Your minimum grade is {min}.");
 
             foreach (var grade in grades)
             {
@@ -48,9 +52,13 @@ namespace Collections_Min_Max_Avg
                     {
                         max = grade;
                     }
-                    Console.WriteLine($"Your maximum grade is {max}.");
-                }
+                    else if (grade < max)
+                    {
+                        max = grades[0];
+                    }
+                }               
             }
+            Console.WriteLine($"Your maximum grade is {max}.");
 
             double average = grades.Sum() / grades.Count();
             Console.WriteLine($"The average is {average}.");
