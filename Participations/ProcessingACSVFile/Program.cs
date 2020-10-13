@@ -65,6 +65,20 @@ namespace ProcessingACSVFile
                         sumFor2005 += sale;
                     }
 
+                    //switch (month)
+                    //{
+                    //    case "1":
+                    //        sumForJan += monthSales;
+                    //        break;
+                    //    case "2":
+                    //        sumForFeb += monthSales;
+                    //        break;
+                    //        cont...
+                    //
+                    //
+                    //    default:
+                    //        break;
+                    //}
 
                     if (month == "1")
                     {
