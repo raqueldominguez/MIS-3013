@@ -47,6 +47,11 @@ namespace Methods
             OutputEvenNumbersFromList();
             OutputAllNumbersFromList();
 
+            //convert char to number
+            //char letter = '5';
+            //int number = Convert.ToInt32(letter.ToString());
+            //Console.WriteLine(number);
+
             Console.ReadKey();
         }
 
