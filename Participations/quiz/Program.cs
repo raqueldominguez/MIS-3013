@@ -6,16 +6,13 @@ namespace quiz
     {
         static void Main(string[] args)
         {
-            double gpa = 3.2;
-
-            if (gpa >= 3.5 - 0.3)
+            for (int i = 4; i > 0; i--)
             {
-                Console.WriteLine($"{gpa}");
+                Console.WriteLine("There are " + i + " puppies left.");
             }
-                Console.ReadKey();
+
+            Console.ReadKey();
         }
-        
-        
-        } 
     }
+}
 
