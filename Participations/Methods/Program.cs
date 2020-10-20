@@ -6,27 +6,29 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter an animal.");
-            string animal = Console.ReadLine();
+            
+            static string speak(string animalType)
+            {               
+                Console.WriteLine("Please enter an animal.");
+                string animal = Console.ReadLine();
+                string animalSound = speak;                
 
-            static string speak (string animal)
-            {
                 if (animal == "dog")
                 {
-                    Console.WriteLine("woof");
+                    animalSound = "woof";
                 }
                 else if (animal == "monkey")
                 {
-                    Console.WriteLine("oo ah ah");
+                    animalSound = "oo ah ah";
                 }
                 else if (animal == "goat")
                 {
-                    Console.WriteLine("bahhh");
+                    animalSound = "bahhh";
                 }
+                return animalSound;
+
+                Console.ReadKey();
             }
-
-
-            Console.ReadKey();
         }
     }
 }
