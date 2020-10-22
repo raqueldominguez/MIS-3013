@@ -4,14 +4,14 @@ namespace Methods
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        
             
             static string speak(string animalType)
             {               
                 Console.WriteLine("Please enter an animal.");
                 string animal = Console.ReadLine();
-                string animalSound = speak;                
+                string animalSound = animalType;                
 
                 if (animal == "dog")
                 {
@@ -27,8 +27,10 @@ namespace Methods
                 }
                 return animalSound;
 
-                Console.ReadKey();
+            Console.ReadKey();
             }
-        }
+
+            
+        
     }
 }
