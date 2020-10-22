@@ -9,6 +9,7 @@ namespace Methods
             Console.WriteLine("Please enter an animal.");
             string animal = Console.ReadLine();
             string animalSound = speak(animal);
+            Console.WriteLine(animalSound);
             Console.ReadKey();
         }
 
