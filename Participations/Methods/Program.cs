@@ -4,14 +4,18 @@ namespace Methods
 {
     class Program
     {
-        //static void Main(string[] args)
-        
-            
-            static string speak(string animalType)
-            {               
-                Console.WriteLine("Please enter an animal.");
-                string animal = Console.ReadLine();
-                string animalSound = animalType;                
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter an animal.");
+            string animal = Console.ReadLine();
+            string animalSound = speak(animal);
+            Console.ReadKey();
+        }
+
+            static string speak(string animal)
+            {
+                
+                string animalSound;
 
                 if (animal == "dog")
                 {
@@ -25,12 +29,11 @@ namespace Methods
                 {
                     animalSound = "bahhh";
                 }
-                return animalSound;
-
-            Console.ReadKey();
-            }
-
-            
-        
+                else
+                {
+                animalSound = "Could not find an animal.";
+                }           
+                return animalSound;                
+        }                  
     }
 }
