@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml;
 
 namespace Methods
 {
@@ -32,9 +33,27 @@ namespace Methods
                 }
                 else
                 {
-                animalSound = "Could not find an animal.";
+                    animalSound = "Could not find an animal.";
                 }           
-                return animalSound;                
+                return animalSound;
+
+            //string output = "";
+
+            //switch (animal.ToLower())
+            //{
+            //    case "dog":
+            //        output = "ruff";
+            //        break;
+            //    case "monkey":               
+            //        output = "ooo ah ah";
+            //        break;
+            //    case "goat":
+            //        output = "bah";
+            //        break;
+            //    default:
+            //        output = "Sorry I do not recognize the animal of " + animal + ".";
+            //        break;
+            //}
         }                  
     }
 }
