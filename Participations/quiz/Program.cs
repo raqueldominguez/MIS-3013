@@ -6,10 +6,14 @@ namespace quiz
     {
         static void Main(string[] args)
         {
-            for (int i = 4; i > 0; i--)
-            {
-                Console.WriteLine("There are " + i + " puppies left.");
-            }
+           
+
+            //Console.ReadKey();
+        }
+
+        static double SecretCalculation(int value1, int value2)
+        {
+            return 2;
 
             Console.ReadKey();
         }
