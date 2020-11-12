@@ -14,5 +14,9 @@ namespace Classes_Toys
             Toys = new List<Toy>();    
         }
 
+        public Toy GetRandomToy( )
+        {
+            //do stuff here
+        }
     }
 }
