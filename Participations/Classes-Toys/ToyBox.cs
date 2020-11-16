@@ -16,7 +16,10 @@ namespace Classes_Toys
 
         public Toy GetRandomToy( )
         {
-            //do stuff here
+            Random rnd = new Random();
+            int randomToy = rnd.Next(Toy(i));
+
+            return;
         }
     }
 }

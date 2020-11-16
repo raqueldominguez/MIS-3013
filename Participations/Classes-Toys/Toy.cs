@@ -17,8 +17,8 @@ namespace Classes_Toys
         public string GetAisle()
         {
             Random rnd = new Random();
-            int rndNum = rnd.Next();
-            return;
+            int randomNumber = rnd.Next(1, 25);
+            return GetAisle;
         }
     }
 }
