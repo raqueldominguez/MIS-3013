@@ -11,15 +11,17 @@ namespace Classes_Toys
 
         public ToyBox()
         {
-            Toys = new List<Toy>();    
+            Toys= new List<Toy>();    
         }
 
-        public Toy GetRandomToy( )
+        public Toy GetRandomToy()
         {
             Random rnd = new Random();
-            int randomToy = rnd.Next(Toy(i));
+            int randomNum = Toys.Count;
+            int randomToy = rnd.Next(0 , randomNum +1);
+            randomToy = Toys[i];
 
-            return;
+            return randomToy;
         }
     }
 }

@@ -7,7 +7,6 @@ namespace Classes_Toys
         static void Main(string[] args)
         {
             ToyBox MyToyBox = new ToyBox();
-            randomNumber = MyToyBox;
 
             string answer;
             do
@@ -18,10 +17,27 @@ namespace Classes_Toys
                 {
                     Console.WriteLine("What toy do you want to add?");
                     string toy = Console.ReadLine();
-                    ToyBox.Add(toy);
+                    MyToyBox.Toys.Add(toy);
                 }
 
             } while (answer == "yes");
+
+
+            Toy MyToy = new Toy();
+
+            Console.WriteLine("What is the manufacturer name?");
+            MyToy.Manufacturer = Console.ReadLine();
+
+            Console.WriteLine("What is the toy name?");
+            MyToy.Name = Console.ReadLine();
+
+            Console.WriteLine("What is the price?");
+            MyToy.Price = Convert.ToDouble(Console.ReadLine());
+
+            int randomNumber = MyToyBox;
+
+            string asile = new Toy();
+            Toys.GetAsile();
 
             Console.ReadKey();
         }

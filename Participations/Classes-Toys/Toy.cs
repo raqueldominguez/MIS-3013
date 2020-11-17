@@ -11,14 +11,19 @@ namespace Classes_Toys
 
         public Toy()
         {
-
+            Manufacturer = "";
+            Name = "";
+            Price = 0;
+            Notes = "";
         }
 
         public string GetAisle()
         {
             Random rnd = new Random();
             int randomNumber = rnd.Next(1, 25);
-            return GetAisle;
+            char manufacturerLetter = Manufacturer[0];
+            string aisle = $"{manufacturerLetter}" + "{randomNumber}";
+            return aisle;
         }
     }
 }
