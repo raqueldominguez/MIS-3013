@@ -16,12 +16,14 @@ namespace Classes_Toys
 
         public Toy GetRandomToy()
         {
-            Random rnd = new Random();
-            int randomNum = Toys.Count;
-            int randomToy = rnd.Next(0 , randomNum +1);
-            randomToy = Toys[i];
+            Toy[] toyArray = Toys.ToArray();
 
-            return randomToy;
+            Random rnd = new Random();
+            int randomToy = rnd.Next(0, Toys.Count + 1);
+            int i = 0;
+            Console.WriteLine(Toys[i]);
+
+            return;
         }
     }
 }

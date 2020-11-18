@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Classes_Toys
 {
@@ -7,6 +8,9 @@ namespace Classes_Toys
         static void Main(string[] args)
         {
             ToyBox MyToyBox = new ToyBox();
+            Toy MyToy = new Toy();
+
+            ToyBox Toys = new List<Toy>();
 
             string answer;
             do
@@ -16,14 +20,12 @@ namespace Classes_Toys
                 if (answer == "yes")
                 {
                     Console.WriteLine("What toy do you want to add?");
-                    string toy = Console.ReadLine();
-                    MyToyBox.Toys.Add(toy);
+                    string newtoy = Console.ReadLine();
+                    ToyBox.Toy.Add(newtoy);
                 }
 
             } while (answer == "yes");
 
-
-            Toy MyToy = new Toy();
 
             Console.WriteLine("What is the manufacturer name?");
             MyToy.Manufacturer = Console.ReadLine();
@@ -34,10 +36,9 @@ namespace Classes_Toys
             Console.WriteLine("What is the price?");
             MyToy.Price = Convert.ToDouble(Console.ReadLine());
 
-            int randomNumber = MyToyBox;
+            //int randomNumber = MyToyBox;
 
-            string asile = new Toy();
-            Toys.GetAsile();
+            MyToy.GetAisle();
 
             Console.ReadKey();
         }
