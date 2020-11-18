@@ -10,7 +10,7 @@ namespace Classes_Toys
             ToyBox MyToyBox = new ToyBox();
             Toy MyToy = new Toy();
 
-            ToyBox Toys = new List<Toy>();
+            MyToyBox.Toys = new List<Toy>();
 
             string answer;
             do
@@ -21,7 +21,7 @@ namespace Classes_Toys
                 {
                     Console.WriteLine("What toy do you want to add?");
                     string newtoy = Console.ReadLine();
-                    ToyBox.Toy.Add(newtoy);
+                    MyToyBox.Toys.Add(newtoy);
                 }
 
             } while (answer == "yes");
@@ -36,9 +36,9 @@ namespace Classes_Toys
             Console.WriteLine("What is the price?");
             MyToy.Price = Convert.ToDouble(Console.ReadLine());
 
-            //int randomNumber = MyToyBox;
+            Console.WriteLine(MyToy.GetAisle());
 
-            MyToy.GetAisle();
+            MyToyBox.GetRandomToy();
 
             Console.ReadKey();
         }

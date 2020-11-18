@@ -22,7 +22,7 @@ namespace Classes_Toys
             Random rnd = new Random();
             int randomNumber = rnd.Next(1, 25);
             char manufacturerLetter = Manufacturer[0];
-            string aisle = $"{manufacturerLetter}" + "{randomNumber}";
+            string aisle = $"{manufacturerLetter}" + $"{randomNumber}";
             return aisle;
         }
     }
