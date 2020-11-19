@@ -7,38 +7,30 @@ namespace Classes_Toys
     {
         static void Main(string[] args)
         {
-            ToyBox MyToyBox = new ToyBox();
-            Toy MyToy = new Toy();
+            ToyBox livingRoomToyBox = new ToyBox();
+            ToyBox playRoomToyBox = new ToyBox();
 
-            MyToyBox.Toys = new List<Toy>();
+            Toy TeddyBear = new Toy();
+            TeddyBear.Manufacturer = "Hasbro";
+            TeddyBear.Name = "Teddy Ruxpin";
+            TeddyBear.Price = 49.99;
+            //TeddyBear.Notes !!!This is private so we cannot access it from this class
 
-            string answer;
-            do
-            {
-                Console.WriteLine("Do you want to add a toy to the toy box?");
-                answer = Console.ReadLine().ToLower();
-                if (answer == "yes")
-                {
-                    Console.WriteLine("What toy do you want to add?");
-                    string newtoy = Console.ReadLine();
-                    MyToyBox.Toys.Add(newtoy);
-                }
+            Toy lego1 = new Toy("Lego", "Star Wars Ship", 39.99, "Not for kids under 5 because they could choke.");
+            Toy lego2 = new Toy("Lego", "Star Wars Ship", 39.99, "Not for kids under 5 because they could choke.");
+            Toy lego3 = new Toy("Lego", "Star Wars Ship", 39.99, "Not for kids under 5 because they could choke.");
 
-            } while (answer == "yes");
+            livingRoomToyBox.Toys.Add(TeddyBear);
+            livingRoomToyBox.Toys.Add(lego1);
 
+            playRoomToyBox.Toys.Add(lego2);
+            playRoomToyBox.Toys.Add(lego3);
 
-            Console.WriteLine("What is the manufacturer name?");
-            MyToy.Manufacturer = Console.ReadLine();
+            Toy rando = livingRoomToyBox.GetRandomToy();
+            //Console.WriteLine($"{rando.Manufacturer} makes {rando.Name} and sells it for {rando.Price.ToString("C2")}.");
+            rando = playRoomToyBox.GetRandomToy();
+            Console.WriteLine(rando);
 
-            Console.WriteLine("What is the toy name?");
-            MyToy.Name = Console.ReadLine();
-
-            Console.WriteLine("What is the price?");
-            MyToy.Price = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine(MyToy.GetAisle());
-
-            MyToyBox.GetRandomToy();
 
             Console.ReadKey();
         }

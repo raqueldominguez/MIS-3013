@@ -11,19 +11,20 @@ namespace Classes_Toys
 
         public ToyBox()
         {
+            //constructor
             Toys= new List<Toy>();    
         }
 
         public Toy GetRandomToy()
         {
-            Toy[] toyArray = Toys.ToArray();
+            //method
 
             Random rnd = new Random();
-            int randomToy = rnd.Next(0, Toys.Count + 1);
-            int i = 0;
-            Console.WriteLine(Toys[i]);
+            int index = rnd.Next(0, Toys.Count);
 
-            return;
+            Toy randomToy = Toys[index];
+
+            return randomToy;
         }
     }
 }
