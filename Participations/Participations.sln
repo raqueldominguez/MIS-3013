@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes_RectangleAndCircle", "Classes_RectangleAndCircle\Classes_RectangleAndCircle.csproj", "{22BAB476-37A4-404A-8647-7502CFD1D8E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes-Toys", "Classes-Toys\Classes-Toys.csproj", "{CA8E43AE-1CFD-4F75-8BAF-9C1DBDF0F794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes-Toys", "Classes-Toys\Classes-Toys.csproj", "{CA8E43AE-1CFD-4F75-8BAF-9C1DBDF0F794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBox", "TextBox\TextBox.csproj", "{F4160BCA-14D4-4FD1-846D-25D0A9B42895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{CA8E43AE-1CFD-4F75-8BAF-9C1DBDF0F794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8E43AE-1CFD-4F75-8BAF-9C1DBDF0F794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA8E43AE-1CFD-4F75-8BAF-9C1DBDF0F794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4160BCA-14D4-4FD1-846D-25D0A9B42895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4160BCA-14D4-4FD1-846D-25D0A9B42895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4160BCA-14D4-4FD1-846D-25D0A9B42895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4160BCA-14D4-4FD1-846D-25D0A9B42895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
