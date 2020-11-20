@@ -13,6 +13,15 @@ namespace TextBox
             MyTextBox.ForeColor = ConsoleColor.White;
             MyTextBox.text = "Hello, world!";
 
+            MyTextBox.Padding = 15;
+            MyTextBox.BackColor = ConsoleColor.Green;
+            MyTextBox.ForeColor = ConsoleColor.DarkBlue;
+            MyTextBox.text = "Happy Holidays!";
+
+            TextBox output = MyTextBox.DisplayText();
+            Console.WriteLine(MyTextBox.text);
+
+            Console.ReadKey();
         }
     }
 }

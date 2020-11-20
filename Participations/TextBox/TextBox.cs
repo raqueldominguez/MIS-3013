@@ -13,12 +13,16 @@ namespace TextBox
 
         public TextBox()
         {
-
+            Padding = 0;
+            BackColor = default;
+            ForeColor = default;
+            text = string.Empty;
         }
 
         public void DisplayText()
         {
-
+            TextBox output = 
+            Console.WriteLine($"{Padding} + ${BackColor} + {ForeColor} + {text}");
         }
     }
 }
