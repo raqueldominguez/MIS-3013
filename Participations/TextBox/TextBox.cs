@@ -21,8 +21,7 @@ namespace TextBox
 
         public void DisplayText()
         {
-            TextBox output = 
-            Console.WriteLine($"{Padding} + ${BackColor} + {ForeColor} + {text}");
+            Console.WriteLine(text.PadRight(Padding),BackColor,ForeColor);
         }
     }
 }
