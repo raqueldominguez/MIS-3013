@@ -8,7 +8,7 @@ namespace TextBox
         {
             TextBox MyTextBox = new TextBox();
 
-            MyTextBox.Padding = 15;
+            MyTextBox.Padding = 5;
             MyTextBox.BackColor = ConsoleColor.Red;
             MyTextBox.ForeColor = ConsoleColor.White;
             MyTextBox.text = "Hello, world!";
@@ -17,7 +17,7 @@ namespace TextBox
 
             MyTextBox.Padding = 15;
             MyTextBox.BackColor = ConsoleColor.Green;
-            MyTextBox.ForeColor = ConsoleColor.DarkBlue;
+            MyTextBox.ForeColor = ConsoleColor.Magenta;
             MyTextBox.text = "Happy Holidays!";
 
             MyTextBox.DisplayText();

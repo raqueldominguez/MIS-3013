@@ -21,7 +21,10 @@ namespace TextBox
 
         public void DisplayText()
         {
-            Console.WriteLine(text.PadRight(Padding), BackColor, ForeColor);
+            Console.BackgroundColor = BackColor;
+            Console.ForegroundColor = ForeColor;
+            string pad = new string(' ', Padding) + text + new string(' ', Padding);
+            Console.WriteLine(pad);
         }
     }
 }
