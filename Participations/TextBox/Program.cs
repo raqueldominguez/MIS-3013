@@ -22,7 +22,6 @@ namespace TextBox
 
             MyTextBox.DisplayText();
 
-
             Console.ReadKey();
         }
     }
